@@ -12,7 +12,54 @@ source("setup_knitr.R")
 Abaixo o histórico de atividades realizadas em classe e atividades extra
 classe aplicadas.
 
-- **DD/MM**: Apresentação da disciplina.
+```{r, eval=FALSE, include=FALSE}
+## Gera a lista com as datas de todas as aulas. O resultado do último
+## comando pode ser copiado direto para o documento
+datas.qua <- seq.Date(as.Date("2017-02-22"), as.Date("2017-06-21"),
+                      by = "week")
+datas.qua <- format.Date(datas.qua, format = "%d/%m")
+datas.sex <- seq.Date(as.Date("2017-02-24"), as.Date("2017-06-23"),
+                      by = "week")
+datas.sex <- format.Date(datas.sex, format = "%d/%m")
+cat(paste0("- **", datas.qua, "**:\n", "- **", datas.sex, "**:\n"))
+```
+
+- **22/02**: Apresentação da disciplina.
+- **24/02**:
+- **01/03**: Feriado
+- **03/03**:
+- **08/03**:
+- **10/03**:
+- **15/03**:
+- **17/03**:
+- **22/03**:
+- **24/03**:
+- **29/03**:
+- **31/03**:
+- **05/04**:
+- **07/04**:
+- **12/04**:
+- **14/04**: Feriado
+- **19/04**:
+- **21/04**: Feriado
+- **26/04**:
+- **28/04**:
+- **03/05**:
+- **05/05**:
+- **10/05**:
+- **12/05**:
+- **17/05**:
+- **19/05**:
+- **24/05**:
+- **26/05**:
+- **31/05**:
+- **02/06**:
+- **07/06**:
+- **09/06**:
+- **14/06**:
+- **16/06**: Feriado (recesso)
+- **21/06**:
+- **23/06**:
 
 ## Exercícios
 
