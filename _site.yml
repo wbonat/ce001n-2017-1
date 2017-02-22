@@ -1,4 +1,4 @@
-name: "disciplinas-template"
+name: "CE001"
 output_dir: "."
 exclude: ["README.md"]
 output:
