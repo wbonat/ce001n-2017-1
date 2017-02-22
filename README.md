@@ -9,7 +9,7 @@ primeiro semestre de 2017, para o curso de Biologia (noturno).
 
 Este repositório contém todo o material de aula e os arquivos
 necessários para gerar a página da disciplina, disponível em:
-(INSERIR LINK)
+https://fernandomayer.github.io/ce001n-2017-1/
 
 ### Para gerar o site
 

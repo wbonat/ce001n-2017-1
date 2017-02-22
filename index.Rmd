@@ -1,5 +1,5 @@
 ---
-title: "CE000 - Nome da Disciplina"
+title: "CE001 - Bioestatística"
 output:
   html_document:
     toc: false
@@ -9,22 +9,22 @@ output:
 source("setup_knitr.R")
 ```
 
-[![Build Status](https://travis-ci.org/fernandomayer/disciplinas-template.svg)](https://travis-ci.org/fernandomayer/disciplinas-template)
+[![Build Status](https://travis-ci.org/fernandomayer/ce001n-2017-1.svg)](https://travis-ci.org/fernandomayer/ce001-2017-1)
 
 <!-- <div class="alert alert-danger" role="alert"> **ATENÇÃO!** Aqui é um -->
 <!-- espaço para avisos. Comente quando não utilizar. </div> -->
 
 # Detalhes da oferta da disciplina
 
-- **Curso:** Disciplina (T)
-- **Período:** segundo semestre de 2016
+- **Curso:** Ciências Biológicas (N)
+- **Período:** primeiro semestre de 2017
 - **Professor Responsável:** [Fernando de Pol Mayer][], ([LEG][]:
-  Laboratório de Estatística e Geoinformação)
+  Laboratório de Estatística e Geoinformação, sala 225, prédio de Exatas)
 - **Horários e Locais:**
-    - Segunda, 13:30 - 15:10h, **EQ13**
-    - Quarta, 13:30 - 15:10h, **EQ13**
+    - Quarta, 18:30 - 20:10h, **PA5**
+    - Sexta, 18:30 - 20:10h, **PA3**
 - **Horários de atendimento do professor:**
-    - Terças e quintas, 14:00-18:00 (preferenciais). Outros horários
+    - Quintas e sextas, 14:00-18:00 (preferenciais). Outros horários
       podem ser agendados previamente por email.
 - **Monitores de CE-001 do Depto. de Estatística:**
     - Local: **LABEST** (Laboratório de Estatística)
@@ -36,10 +36,10 @@ source("setup_knitr.R")
       antecedência.
     - A média final será a média simples das 3 provas (todas tem o mesmo
       peso).
-- **Datas importantes:** De acordo com a [Resolução 49/15 - CEPE][]:
-    - **01/08**: Início do semestre letivo
-    - **12/12**: Final do semestre letivo
-    - **15/12-21/12**: Período de exames
+- **Datas importantes:** De acordo com a [Resolução 62/16 - CEPE][]:
+    - **20/02**: Início do semestre letivo
+    - **24/06**: Final do semestre letivo
+    - **03/07-08/07**: Período de exames
 
 # Programa/objetivos da disciplina
 
@@ -52,20 +52,8 @@ análises estatística básicas. O curso compreende três grandes tópicos:
 - Noções de probabilidades e distribuições de probabilidades
 - Introdução à procedimentos de inferência estatística
 
-<!-- - **Avaliação**: sabatinas, aplicadas ao final de um módulo da disciplina -->
-<!--     - As sabatinas são provas menores, e com conteúdo específico -->
-<!--     - O número de sabatinas em um semestre pode variar conforme o -->
-<!--       andamento da disciplina (geralmente entre 6 e 10) -->
-<!--     - As datas das sabtinas serão definidas durante o semestre, e sempre -->
-<!--       será avisado com antecedência -->
-<!--     - A média final será a média das 75% maiores notas (as 25% menores -->
-<!--       notas serão descartadas) -->
-<!--     - **Importante**: nas sabatinas não há segunda chamada. Ao perder -->
-<!--       uma sabatina, a nota é 0, e automaticamente estará dentro das 25% -->
-<!--       menores notas que serão excluídas para o cálculo da média final -->
-
 <!-- links -->
 
 [Fernando de Pol Mayer]: https://fernandomayer.github.io
 [LEG]: http://www.leg.ufpr.br
-[Resolução 49/15 - CEPE]: http://www.ufpr.br/soc/descarregar_arquivo.php?cod=1064
+[Resolução 62/16 - CEPE]: http://www.est.ufpr.br/calendario/cepe6216.pdf
