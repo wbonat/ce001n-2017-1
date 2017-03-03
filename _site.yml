@@ -28,10 +28,8 @@ navbar:
       href: recursos.html
     - text: "Materiais"
       menu:
-      - text: "Introdução"
-      - text: "Introdução à Estatística e amostragem [PDF]"
-        href: 01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf
+      - text: "Introdução à Análise Exploratória de Dados [PDF]"
+        href: Slides/Aula1.pdf
   right:
     - text: GitHub
-      icon: fa-github fa-lg
-      href: https://github.com/fernandomayer/ce001n-2017-1
+      href: https://github.com/wbonat/ce001n-2017-1

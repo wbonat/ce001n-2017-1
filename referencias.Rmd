@@ -7,18 +7,16 @@ output:
 
 ## Referências básicas
 
+- [Magalhães, MN](http://www.ime.usp.br/~marcos);
+      [Lima, ACP](http://www.ime.usp.br/~acarlos).
+      [Noções de Probabilidade e Estatística](http://www.ime.usp.br/~noproest).
+      São Paulo: EDUSP, 2008 (6ª edição).
 
 - Bussab, WO; [Morettin, PA](http://www.ime.usp.br/~pam).
   [Estatística Básica](http://www.editorasaraiva.com.br/produtos/show/isbn:9788502207998/titulo:estatistica-basica/).
   São Paulo: [Editora Saraiva](http://www.saraivauni.com.br), 2006 (5ª
   Edição).
-- [Magalhães, MN](http://www.ime.usp.br/~marcos);
-      [Lima, ACP](http://www.ime.usp.br/~acarlos).
-      [Noções de Probabilidade e Estatística](http://www.ime.usp.br/~noproest).
-      São Paulo: EDUSP, 2008 (6ª edição).
-- Montgomery, DC; Runger, GC.
-  [Estatística aplicada e probabilidade para engenheiros](http://www.grupogen.com.br/estatistica-aplicada-e-probabilidade-para-engenheiros).
-  Rio de Janeiro: LTC Editora, 2012 (5ª Edição).
+
 
 ## Referências complementares
 
