@@ -216,6 +216,9 @@ $(document).ready(function () {
     <li>
       <a href="Slides/Aula1.pdf">Introdução à Análise Exploratória de Dados [PDF]</a>
     </li>
+    <li>
+      <a href="Slides/Aula2.pdf">Probabilidades [PDF]</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -245,7 +248,379 @@ $(document).ready(function () {
 </div>
 
 
-<p>Nada ainda.</p>
+<pre class="r"><code>prova1 &lt;- read.csv(&quot;/home/wagner/Dropbox/Cursos/EstatísticaBásica/BiologiaNOTURNO/Prova1NOTA.csv&quot;, header = TRUE)
+prova1$Prova.1 &lt;- prova1$Prova.1/15
+kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;), digits = 2)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">X</th>
+<th align="center">X.1</th>
+<th align="left">X.2</th>
+<th align="center">X.3</th>
+<th align="left">Prova.1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="center">45C</td>
+<td align="left">GRR20130117</td>
+<td align="center">ALINE BURDA FARIAS</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="center">45C</td>
+<td align="left">GRR20141144</td>
+<td align="center">ALINE CRISTINA PRADO</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="center">45C</td>
+<td align="left">GRR20110714</td>
+<td align="center">AMANDA CRISTINA PROTSKI</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="center">45C</td>
+<td align="left">GRR20140087</td>
+<td align="center">ANA MARIA GONCALVES CHAVES</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="center">45C</td>
+<td align="left">GRR20130348</td>
+<td align="center">ANDRE AGUIAR ZAMBON</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="center">45C</td>
+<td align="left">GRR20127352</td>
+<td align="center">ANDRE SERVIENSKI</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="center">45C</td>
+<td align="left">GRR20117269</td>
+<td align="center">ANDREIA CARLA DA SILVA</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="even">
+<td align="left">8</td>
+<td align="center">45C</td>
+<td align="left">GRR20127337</td>
+<td align="center">ANGELA CRISTINA DOS SANTOS FORSTNER</td>
+<td align="left">0.60</td>
+</tr>
+<tr class="odd">
+<td align="left">9</td>
+<td align="center">45C</td>
+<td align="left">GRR20120647</td>
+<td align="center">ATILA ANTONIO DE ALMEIDA</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="even">
+<td align="left">10</td>
+<td align="center">45C</td>
+<td align="left">GRR20130520</td>
+<td align="center">AYRTON IZAIAS DE OLIVEIRA</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left">11</td>
+<td align="center">45C</td>
+<td align="left">GRR20141408</td>
+<td align="center">BEATRIZ DE BEM HIRANO</td>
+<td align="left">0.47</td>
+</tr>
+<tr class="even">
+<td align="left">12</td>
+<td align="center">45C</td>
+<td align="left">GRR20141413</td>
+<td align="center">BEATRIZ MARQUES ASSAD</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="odd">
+<td align="left">13</td>
+<td align="center">45C</td>
+<td align="left">GRR20127155</td>
+<td align="center">BRENO RODRIGO DE ARAUJO</td>
+<td align="left">0.87</td>
+</tr>
+<tr class="even">
+<td align="left">14</td>
+<td align="center">45C</td>
+<td align="left">GRR20142763</td>
+<td align="center">CAROLINA CAFISSO BUENO</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left">15</td>
+<td align="center">45C</td>
+<td align="left">GRR20142116</td>
+<td align="center">DEBORAH ALINE DINIZ WECOSKI</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">16</td>
+<td align="center">45C</td>
+<td align="left">GRR20127350</td>
+<td align="center">DUANY CRISTINI RAMBO</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="odd">
+<td align="left">17</td>
+<td align="center">45C</td>
+<td align="left">GRR20142311</td>
+<td align="center">EMILY NENTWIG DE BARROS</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="even">
+<td align="left">18</td>
+<td align="center">45C</td>
+<td align="left">GRR20140479</td>
+<td align="center">FERNANDA PINHELLI</td>
+<td align="left">0.67</td>
+</tr>
+<tr class="odd">
+<td align="left">19</td>
+<td align="center">45C</td>
+<td align="left">GRR20135662</td>
+<td align="center">FLAVIA CAROLINE BARDDAL</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="even">
+<td align="left">20</td>
+<td align="center">45C</td>
+<td align="left">GRR20131624</td>
+<td align="center">FRANCISCO JOSE TELES MOTA</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left">21</td>
+<td align="center">45C</td>
+<td align="left">GRR20147213</td>
+<td align="center">GABRIEL ROEHRIG PACHECO</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="even">
+<td align="left">22</td>
+<td align="center">45C</td>
+<td align="left">GRR20140689</td>
+<td align="center">GABRIELA PRINCIVAL MARQUES RIBEIRO</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="odd">
+<td align="left">23</td>
+<td align="center">45C</td>
+<td align="left">GRR20131728</td>
+<td align="center">GABRIELA SVIERDSOVSKI</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">24</td>
+<td align="center">45C</td>
+<td align="left">GRR20131859</td>
+<td align="center">GIULIANO LUIZ GAVA</td>
+<td align="left">0.67</td>
+</tr>
+<tr class="odd">
+<td align="left">25</td>
+<td align="center">45C</td>
+<td align="left">GRR20127183</td>
+<td align="center">GUILHERME BURGEL</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="even">
+<td align="left">26</td>
+<td align="center">45C</td>
+<td align="left">GRR20140733</td>
+<td align="center">JESSICA MILOCH</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="odd">
+<td align="left">27</td>
+<td align="center">45C</td>
+<td align="left">GRR20135965</td>
+<td align="center">JESSICA NATALIA LOYOLA</td>
+<td align="left">1.00</td>
+</tr>
+<tr class="even">
+<td align="left">28</td>
+<td align="center">45C</td>
+<td align="left">GRR20132334</td>
+<td align="center">JESSIKA LENZI</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left">29</td>
+<td align="center">45C</td>
+<td align="left">GRR20127149</td>
+<td align="center">JOHNATHAN ALEXSANDER KLINGBEIL DE LIMA CARDOSO</td>
+<td align="left">0.67</td>
+</tr>
+<tr class="even">
+<td align="left">30</td>
+<td align="center">45C</td>
+<td align="left">GRR20132848</td>
+<td align="center">LETICIA MARA MARCA</td>
+<td align="left">1.00</td>
+</tr>
+<tr class="odd">
+<td align="left">31</td>
+<td align="center">45C</td>
+<td align="left">GRR20127160</td>
+<td align="center">LORENA EUCLYDES DOS SANTOS</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="even">
+<td align="left">32</td>
+<td align="center">45C</td>
+<td align="left">GRR20148523</td>
+<td align="center">LUANA VIANA</td>
+<td align="left">0.60</td>
+</tr>
+<tr class="odd">
+<td align="left">33</td>
+<td align="center">45C</td>
+<td align="left">GRR20105845</td>
+<td align="center">LUCIANO LYZNIK DA SILVA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">34</td>
+<td align="center">45C</td>
+<td align="left">GRR20127177</td>
+<td align="center">LUIZA RAUEN SABBAG</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">35</td>
+<td align="center">45C</td>
+<td align="left">GRR20127164</td>
+<td align="center">LUZIANNA CELESTE SCHUINDT</td>
+<td align="left">0.87</td>
+</tr>
+<tr class="even">
+<td align="left">36</td>
+<td align="center">45C</td>
+<td align="left">GRR20133197</td>
+<td align="center">MANUELA CATHARINA TWARDOWSCHY</td>
+<td align="left">0.67</td>
+</tr>
+<tr class="odd">
+<td align="left">37</td>
+<td align="center">45C</td>
+<td align="left">GRR20143693</td>
+<td align="center">MARIANA PEREZ DOS SANTOS</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="even">
+<td align="left">38</td>
+<td align="center">45C</td>
+<td align="left">GRR20141323</td>
+<td align="center">MAYARA DOS SANTOS RODRIGUES</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="odd">
+<td align="left">39</td>
+<td align="center">45C</td>
+<td align="left">GRR20133587</td>
+<td align="center">MIGUEL MACHNICKI REGE DOS REIS</td>
+<td align="left">0.47</td>
+</tr>
+<tr class="even">
+<td align="left">40</td>
+<td align="center">45C</td>
+<td align="left">GRR20144269</td>
+<td align="center">ODAIR MILIONI DE MEIRA</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left">41</td>
+<td align="center">45C</td>
+<td align="left">GRR20120052</td>
+<td align="center">PALOMA LEAL DE ANDRADE</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="even">
+<td align="left">42</td>
+<td align="center">45C</td>
+<td align="left">GRR20148528</td>
+<td align="center">RAFAEL DE OLIVEIRA</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left">43</td>
+<td align="center">45C</td>
+<td align="left">GRR20127167</td>
+<td align="center">RAFAEL FERNANDO CASTELLI</td>
+<td align="left">0.87</td>
+</tr>
+<tr class="even">
+<td align="left">44</td>
+<td align="center">45C</td>
+<td align="left">GRR20141158</td>
+<td align="center">RAFAEL FRANCISCO DOS SANTOS CINTRA</td>
+<td align="left">0.73</td>
+</tr>
+<tr class="odd">
+<td align="left">45</td>
+<td align="center">45C</td>
+<td align="left">GRR20134035</td>
+<td align="center">RAYANA YUMI SATO</td>
+<td align="left">0.93</td>
+</tr>
+<tr class="even">
+<td align="left">46</td>
+<td align="center">45C</td>
+<td align="left">GRR20144279</td>
+<td align="center">REBEKAH GIESE DE PAULA MACHADO</td>
+<td align="left">0.87</td>
+</tr>
+<tr class="odd">
+<td align="left">47</td>
+<td align="center">45C</td>
+<td align="left">GRR20144344</td>
+<td align="center">RENATA DA SILVA SCHIBELBEIN</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">48</td>
+<td align="center">45C</td>
+<td align="left">GRR20134091</td>
+<td align="center">RENATA SCUZZIATTO MARCILIO</td>
+<td align="left">0.67</td>
+</tr>
+<tr class="odd">
+<td align="left">49</td>
+<td align="center">45C</td>
+<td align="left">GRR20141033</td>
+<td align="center">THAIS CRISTINA TIRADO</td>
+<td align="left">0.80</td>
+</tr>
+<tr class="even">
+<td align="left">50</td>
+<td align="center">45C</td>
+<td align="left">GRR20105472</td>
+<td align="center">WAGNER CARDOSO DA SILVA</td>
+<td align="left">0.60</td>
+</tr>
+<tr class="odd">
+<td align="left">NA</td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="center">MARCO ANTONIO PEDROSO VICENTE</td>
+<td align="left">0.80</td>
+</tr>
+</tbody>
+</table>
 
 <center>
   <hr width="100%" size="3px">

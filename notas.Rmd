@@ -8,9 +8,8 @@ output:
 ```{r setup, include=FALSE}
 source("setup_knitr.R")
 ```
-
-```{r pacotes, include=FALSE}
-library(knitr)
+```{r pacotes, include=TRUE}
+prova1 <- read.csv("/home/wagner/Dropbox/Cursos/EstatísticaBásica/BiologiaNOTURNO/Prova1NOTA.csv", header = TRUE)
+prova1$Prova.1 <- prova1$Prova.1/15
+kable(prova1, align = c("l","c"), digits = 2)
 ```
-
-Nada ainda.
