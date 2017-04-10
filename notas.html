@@ -225,6 +225,9 @@ $(document).ready(function () {
     <li>
       <a href="Slides/Aula4.pdf">Medidas resumo [PDF]</a>
     </li>
+    <li>
+      <a href="Slides/Aula5.pdf">Variáveis bidimensionais [PDF]</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -255,7 +258,7 @@ $(document).ready(function () {
 
 
 <pre class="r"><code>prova1 &lt;- read.csv(&quot;/home/wagner/Dropbox/Cursos/EstatísticaBásica/BiologiaNOTURNO/Prova1NOTA.csv&quot;, header = TRUE)
-kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;), digits = 2)</code></pre>
+kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;), digits = 2)</code></pre>
 <table>
 <thead>
 <tr class="header">
@@ -263,6 +266,7 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;)
 <th align="center">Prova.1</th>
 <th align="center">Prova.2</th>
 <th align="center">Prova.3</th>
+<th align="center">Prova.4</th>
 </tr>
 </thead>
 <tbody>
@@ -271,41 +275,48 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;)
 <td align="center">12</td>
 <td align="center">9</td>
 <td align="center">6</td>
+<td align="center">12</td>
 </tr>
 <tr class="even">
 <td align="left">ALINE CRISTINA PRADO</td>
 <td align="center">12</td>
 <td align="center">7</td>
 <td align="center">8</td>
+<td align="center">9</td>
 </tr>
 <tr class="odd">
 <td align="left">AMANDA CRISTINA PROTSKI</td>
 <td align="center">NA</td>
 <td align="center">11</td>
 <td align="center">NA</td>
+<td align="center">12</td>
 </tr>
 <tr class="even">
 <td align="left">ANA MARIA GONCALVES CHAVES</td>
 <td align="center">14</td>
 <td align="center">9</td>
 <td align="center">NA</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">ANDRE AGUIAR ZAMBON</td>
 <td align="center">NA</td>
 <td align="center">6</td>
 <td align="center">9</td>
+<td align="center">8</td>
 </tr>
 <tr class="even">
 <td align="left">ANDRE SERVIENSKI</td>
 <td align="center">11</td>
 <td align="center">NA</td>
 <td align="center">10</td>
+<td align="center">8</td>
 </tr>
 <tr class="odd">
 <td align="left">ANDREIA CARLA DA SILVA</td>
 <td align="center">14</td>
 <td align="center">5</td>
+<td align="center">9</td>
 <td align="center">9</td>
 </tr>
 <tr class="even">
@@ -313,41 +324,48 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;)
 <td align="center">9</td>
 <td align="center">7</td>
 <td align="center">NA</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">ATILA ANTONIO DE ALMEIDA</td>
 <td align="center">12</td>
 <td align="center">6</td>
 <td align="center">9</td>
+<td align="center">8</td>
 </tr>
 <tr class="even">
 <td align="left">AYRTON IZAIAS DE OLIVEIRA</td>
 <td align="center">11</td>
 <td align="center">10</td>
 <td align="center">14</td>
+<td align="center">12</td>
 </tr>
 <tr class="odd">
 <td align="left">BEATRIZ DE BEM HIRANO</td>
 <td align="center">7</td>
 <td align="center">10</td>
 <td align="center">12</td>
+<td align="center">10</td>
 </tr>
 <tr class="even">
 <td align="left">BEATRIZ MARQUES ASSAD</td>
 <td align="center">14</td>
 <td align="center">13</td>
 <td align="center">12</td>
+<td align="center">9</td>
 </tr>
 <tr class="odd">
 <td align="left">BRENO RODRIGO DE ARAUJO</td>
 <td align="center">13</td>
 <td align="center">NA</td>
 <td align="center">11</td>
+<td align="center">NA</td>
 </tr>
 <tr class="even">
 <td align="left">CAROLINA CAFISSO BUENO</td>
 <td align="center">11</td>
 <td align="center">11</td>
+<td align="center">13</td>
 <td align="center">13</td>
 </tr>
 <tr class="odd">
@@ -355,41 +373,48 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;)
 <td align="center">NA</td>
 <td align="center">9</td>
 <td align="center">NA</td>
+<td align="center">6</td>
 </tr>
 <tr class="even">
 <td align="left">DUANY CRISTINI RAMBO</td>
 <td align="center">12</td>
 <td align="center">NA</td>
 <td align="center">7</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">EMILY NENTWIG DE BARROS</td>
 <td align="center">14</td>
 <td align="center">8</td>
 <td align="center">15</td>
+<td align="center">11</td>
 </tr>
 <tr class="even">
 <td align="left">FERNANDA PINHELLI</td>
 <td align="center">10</td>
 <td align="center">10</td>
 <td align="center">14</td>
+<td align="center">8</td>
 </tr>
 <tr class="odd">
 <td align="left">FLAVIA CAROLINE BARDDAL</td>
 <td align="center">12</td>
 <td align="center">NA</td>
 <td align="center">7</td>
+<td align="center">NA</td>
 </tr>
 <tr class="even">
 <td align="left">FRANCISCO JOSE TELES MOTA</td>
 <td align="center">11</td>
 <td align="center">8</td>
 <td align="center">15</td>
+<td align="center">6</td>
 </tr>
 <tr class="odd">
 <td align="left">GABRIEL ROEHRIG PACHECO</td>
 <td align="center">11</td>
 <td align="center">13</td>
+<td align="center">11</td>
 <td align="center">11</td>
 </tr>
 <tr class="even">
@@ -397,69 +422,81 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;)
 <td align="center">12</td>
 <td align="center">7</td>
 <td align="center">9</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">GABRIELA SVIERDSOVSKI</td>
 <td align="center">13</td>
 <td align="center">NA</td>
 <td align="center">11</td>
+<td align="center">10</td>
 </tr>
 <tr class="even">
 <td align="left">GIULIANO LUIZ GAVA</td>
 <td align="center">10</td>
 <td align="center">NA</td>
 <td align="center">12</td>
+<td align="center">9</td>
 </tr>
 <tr class="odd">
 <td align="left">GUILHERME BURGEL</td>
 <td align="center">14</td>
 <td align="center">11</td>
 <td align="center">10</td>
+<td align="center">12</td>
 </tr>
 <tr class="even">
 <td align="left">JESSICA MILOCH</td>
 <td align="center">12</td>
 <td align="center">7</td>
 <td align="center">NA</td>
+<td align="center">6</td>
 </tr>
 <tr class="odd">
 <td align="left">JESSICA NATALIA LOYOLA</td>
 <td align="center">15</td>
 <td align="center">10</td>
 <td align="center">NA</td>
+<td align="center">8</td>
 </tr>
 <tr class="even">
 <td align="left">JESSIKA LENZI</td>
 <td align="center">11</td>
 <td align="center">9</td>
 <td align="center">11</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">JOHNATHAN ALEXSANDER KLINGBEIL DE LIMA CARDOSO</td>
 <td align="center">10</td>
 <td align="center">11</td>
 <td align="center">12</td>
+<td align="center">9</td>
 </tr>
 <tr class="even">
 <td align="left">LETICIA MARA MARCA</td>
 <td align="center">15</td>
 <td align="center">9</td>
 <td align="center">11</td>
+<td align="center">12</td>
 </tr>
 <tr class="odd">
 <td align="left">LORENA EUCLYDES DOS SANTOS</td>
 <td align="center">14</td>
 <td align="center">10</td>
 <td align="center">15</td>
+<td align="center">11</td>
 </tr>
 <tr class="even">
 <td align="left">LUANA VIANA</td>
 <td align="center">9</td>
 <td align="center">11</td>
 <td align="center">13</td>
+<td align="center">8</td>
 </tr>
 <tr class="odd">
 <td align="left">LUCIANO LYZNIK DA SILVA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
@@ -469,29 +506,34 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;)
 <td align="center">NA</td>
 <td align="center">10</td>
 <td align="center">NA</td>
+<td align="center">9</td>
 </tr>
 <tr class="odd">
 <td align="left">LUZIANNA CELESTE SCHUINDT</td>
 <td align="center">13</td>
 <td align="center">10</td>
 <td align="center">NA</td>
+<td align="center">7</td>
 </tr>
 <tr class="even">
 <td align="left">MANUELA CATHARINA TWARDOWSCHY</td>
 <td align="center">10</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">MARIANA PEREZ DOS SANTOS</td>
 <td align="center">12</td>
 <td align="center">11</td>
 <td align="center">6</td>
+<td align="center">9</td>
 </tr>
 <tr class="even">
 <td align="left">MAYARA DOS SANTOS RODRIGUES</td>
 <td align="center">14</td>
 <td align="center">NA</td>
+<td align="center">11</td>
 <td align="center">11</td>
 </tr>
 <tr class="odd">
@@ -499,84 +541,98 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;)
 <td align="center">7</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">12</td>
 </tr>
 <tr class="even">
 <td align="left">ODAIR MILIONI DE MEIRA</td>
 <td align="center">11</td>
 <td align="center">11</td>
 <td align="center">7</td>
+<td align="center">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">PALOMA LEAL DE ANDRADE</td>
 <td align="center">14</td>
 <td align="center">8</td>
 <td align="center">12</td>
+<td align="center">11</td>
 </tr>
 <tr class="even">
 <td align="left">RAFAEL DE OLIVEIRA</td>
 <td align="center">11</td>
 <td align="center">NA</td>
 <td align="center">7</td>
+<td align="center">11</td>
 </tr>
 <tr class="odd">
 <td align="left">RAFAEL FERNANDO CASTELLI</td>
 <td align="center">13</td>
 <td align="center">NA</td>
 <td align="center">9</td>
+<td align="center">11</td>
 </tr>
 <tr class="even">
 <td align="left">RAFAEL FRANCISCO DOS SANTOS CINTRA</td>
 <td align="center">11</td>
 <td align="center">8</td>
 <td align="center">NA</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">RAYANA YUMI SATO</td>
 <td align="center">14</td>
 <td align="center">9</td>
 <td align="center">8</td>
+<td align="center">9</td>
 </tr>
 <tr class="even">
 <td align="left">REBEKAH GIESE DE PAULA MACHADO</td>
 <td align="center">13</td>
 <td align="center">14</td>
 <td align="center">11</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">RENATA DA SILVA SCHIBELBEIN</td>
 <td align="center">NA</td>
-<td align="center">13</td>
-<td align="center">15</td>
+<td align="center">10</td>
+<td align="center">8</td>
+<td align="center">12</td>
 </tr>
 <tr class="even">
 <td align="left">RENATA SCUZZIATTO MARCILIO</td>
 <td align="center">10</td>
-<td align="center">NA</td>
-<td align="center">NA</td>
+<td align="center">13</td>
+<td align="center">15</td>
+<td align="center">8</td>
 </tr>
 <tr class="odd">
 <td align="left">THAIS CRISTINA TIRADO</td>
 <td align="center">12</td>
 <td align="center">10</td>
 <td align="center">10</td>
+<td align="center">11</td>
 </tr>
 <tr class="even">
 <td align="left">WAGNER CARDOSO DA SILVA</td>
 <td align="center">9</td>
 <td align="center">10</td>
 <td align="center">5</td>
+<td align="center">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">MARCO ANTONIO PEDROSO VICENTE</td>
 <td align="center">12</td>
 <td align="center">11</td>
 <td align="center">5</td>
+<td align="center">7</td>
 </tr>
 <tr class="even">
 <td align="left">ARIVALDO COSTA MELO</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">9</td>
+<td align="center">10</td>
 </tr>
 </tbody>
 </table>
