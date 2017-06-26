@@ -9,6 +9,7 @@ output:
 source("setup_knitr.R")
 ```
 ```{r pacotes, include=TRUE}
-prova1 <- read.csv("/home/wagner/Dropbox/Cursos/EstatísticaBásica/BiologiaNOTURNO/Prova1NOTA.csv", header = TRUE)
+file = "/home/wagner/Dropbox/Cursos/EstatísticaBásica/BiologiaNOTURNO/Prova1NOTA.csv"
+prova1 <- read.csv(file, header = TRUE)
 kable(prova1, align = c("l","c","c","c","c","c","c","c","c","c","l"), digits = 2)
 ```

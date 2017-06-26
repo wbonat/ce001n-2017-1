@@ -272,7 +272,8 @@ $(document).ready(function () {
 </div>
 
 
-<pre class="r"><code>prova1 &lt;- read.csv(&quot;/home/wagner/Dropbox/Cursos/EstatísticaBásica/BiologiaNOTURNO/Prova1NOTA.csv&quot;, header = TRUE)
+<pre class="r"><code>file = &quot;/home/wagner/Dropbox/Cursos/EstatísticaBásica/BiologiaNOTURNO/Prova1NOTA.csv&quot;
+prova1 &lt;- read.csv(file, header = TRUE)
 kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;l&quot;), digits = 2)</code></pre>
 <table>
 <thead>
@@ -860,10 +861,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">7,33</td>
 <td align="center">4,67</td>
 <td align="center">8,67</td>
-<td align="center">0,00</td>
+<td align="center">10,00</td>
 <td align="center">8,00</td>
 <td align="center">10,00</td>
-<td align="left">6,81</td>
+<td align="left">7,93</td>
 <td align="left">Aprovado</td>
 </tr>
 <tr class="even">
